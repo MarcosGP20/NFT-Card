@@ -1,3 +1,7 @@
+$primary-color-blue: hsl(215, 51%, 70%);
+$primary-color-cian: hsl(178, 100%, 50%);
+$background-color-card: hsl(216, 50%, 16%);
+$font: "Outfit", sans-serif;
 body {
   width: 100vw;
   height: 100vh;
@@ -12,11 +16,97 @@ body {
 .card {
   width: 300px;
   height: 500px;
-  background-color: white;
+  background-color: $background-color-card;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+}
+.nft-name {
+  font-family: $font;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  font-weight: 500px;
+  margin: 0;
+  font-size: 20px;
 }
 
+.nft-name:hover {
+  color: $primary-color-cian;
+}
+.description {
+  color: white;
+  font-family: $font;
+  font-size: 16px;
+  padding: 0px 5px 5px 15px;
+  color: $primary-color-blue;
+  margin: 0;
+  // border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.eth {
+  color: $primary-color-cian;
+  font-family: $font;
+}
 .foto {
   width: 90%;
   margin: 15px;
+  background: #1abc9c;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.foto:hover {
+  opacity: 0.5;
+  // DOESN´T WORK
+  background-color: $primary-color-cian;
+}
+
+.nashe {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $primary-color-blue;
+  margin-top: 0;
+}
+
+.foto-eth {
+  padding: 15px;
+  width: 10px;
+}
+
+.card-clock {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  margin-left: 65px;
+  font-family: $font;
+  color: $primary-color-blue;
+  padding: 0 auto;
+  //   flex: 1;
+}
+
+.clock {
+  width: auto;
+  height: auto;
+  margin: 15px;
+}
+.avatar {
+  display: flex;
+}
+.avatar > p {
+  font-family: $font;
+  color: $primary-color-blue;
+}
+
+.avatar-img {
+  width: 30px;
+  padding: 10px;
+  // border: 1px solid white;
+}
+
+.creator {
+  color: white;
+}
+
+.creator:hover {
+  color: $primary-color-cian;
 }
